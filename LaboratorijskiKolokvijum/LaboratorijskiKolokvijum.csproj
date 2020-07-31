@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9A4DF49-9DC2-4A7B-8478-8F4854C58ED1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LaboratorijskiKolokvijum</RootNamespace>
+    <AssemblyName>LaboratorijskiKolokvijum</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLayer\AlbumDto.cs" />
+    <Compile Include="BusinessLayer\BaseDto.cs" />
+    <Compile Include="BusinessLayer\CreateSongDto.cs" />
+    <Compile Include="BusinessLayer\EfOperation.cs" />
+    <Compile Include="BusinessLayer\GenreDto.cs" />
+    <Compile Include="BusinessLayer\MediaTypeDto.cs" />
+    <Compile Include="BusinessLayer\Operation.cs" />
+    <Compile Include="BusinessLayer\OperationManager.cs" />
+    <Compile Include="BusinessLayer\OperationResult.cs" />
+    <Compile Include="BusinessLayer\Operations\AddSongOperation.cs" />
+    <Compile Include="BusinessLayer\Operations\DeleteSongOperation.cs" />
+    <Compile Include="BusinessLayer\Operations\GetAlbumsOperation.cs" />
+    <Compile Include="BusinessLayer\Operations\GetGenresOperation.cs" />
+    <Compile Include="BusinessLayer\Operations\GetMediaTypesOperation.cs" />
+    <Compile Include="BusinessLayer\Operations\GetSongsOperation.cs" />
+    <Compile Include="BusinessLayer\SongDto.cs" />
+    <Compile Include="DataLayer\Album.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\Artist.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\BazaContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\BazaContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\BazaContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\Customer.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\Employee.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\Genre.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\Invoice.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\InvoiceLine.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\MediaType.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\Playlist.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\Track.cs">
+      <DependentUpon>BazaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="DataLayer\BazaContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BazaContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataLayer\BazaContext.edmx.diagram">
+      <DependentUpon>BazaContext.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataLayer\BazaContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BazaContext.Context.cs</LastGenOutput>
+      <DependentUpon>BazaContext.edmx</DependentUpon>
+    </Content>
+    <Content Include="DataLayer\BazaContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BazaContext.edmx</DependentUpon>
+      <LastGenOutput>BazaContext.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

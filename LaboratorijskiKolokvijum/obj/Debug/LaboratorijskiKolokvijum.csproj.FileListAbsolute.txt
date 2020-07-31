@@ -1,0 +1,15 @@
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\bin\Debug\LaboratorijskiKolokvijum.exe.config
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\bin\Debug\LaboratorijskiKolokvijum.exe
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\bin\Debug\LaboratorijskiKolokvijum.pdb
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\obj\Debug\LaboratorijskiKolokvijum.Form1.resources
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\obj\Debug\LaboratorijskiKolokvijum.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\obj\Debug\LaboratorijskiKolokvijum.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\obj\Debug\LaboratorijskiKolokvijum.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\obj\Debug\LaboratorijskiKolokvijum.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\obj\Debug\LaboratorijskiKolokvijum.exe
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\obj\Debug\LaboratorijskiKolokvijum.pdb
+C:\Users\Lenovo\source\repos\LaboratorijskiKolokvijum\LaboratorijskiKolokvijum\obj\Debug\LaboratorijskiKolokvijum.csprojAssemblyReference.cache
